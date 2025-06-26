@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تیم فریلنسر فرامندی | Faramandi Team Freelancers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; background: #f4f7fa; color: #333; direction: rtl; }
+    nav { background: #1fb57b; color: #fff; padding: 1rem; position: sticky; top: 0; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    header { background: url('https://mikkegoes.com/wp-content/uploads/2020/01/Make-money-online-UpWork-freelancing-platform.png') no-repeat center center/cover; height: 90vh; position: relative; }
+    header::before { content: ''; position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.5); }
+    header .content { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center; color: #fff; }
+    header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.2rem; }
+    section { padding: 4rem 2rem; max-width: 1200px; margin: auto; }
+    .services, .portfolio, .team, .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+    .card { background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; }
+    .card i { font-size: 2rem; margin-bottom: 0.75rem; color: #1fb57b; }
+    .portfolio img { width: 100%; height: auto; border-radius: 6px; }
+    .translation-split { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .translation-split img { width: 48%; border: 1px solid #ddd; border-radius: 4px; }
+    form input, form textarea { width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px; }
+    form button { background: #1fb57b; color: #fff; padding: 0.75rem 1.5rem; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+    footer { background: #333; color: #eee; text-align: center; padding: 2rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#services">خدمات</a>
+    <a href="#portfolio">نمونه‌کار</a>
+    <a href="#team">تیم ما</a>
+    <a href="#testimonials">نظرات</a>
+    <a href="#contact">تماس با ما</a>
+  </nav>
+
+  <header>
+    <div class="content">
+      <h1>تیم فریلنسر فرامندی</h1>
+      <p>ذهن‌های خلاق، نتایج عملی</p>
+    </div>
+  </header>
+
+  <section id="services">
+    <h2>خدمات ما</h2>
+    <div class="services">
+      <div class="card"><i class="fa-brands fa-instagram"></i><h3>طراحی پست و استوری اینستاگرام</h3><p>طراحی حرفه‌ای برای کمپین‌های شبکه‌های اجتماعی شما.</p></div>
+      <div class="card"><i class="fa-solid fa-file-lines"></i><h3>تایپ و تبدیل PDF</h3><p>تبدیل سریع و دقیق PDF به Word/Excel.</p></div>
+      <div class="card"><i class="fa-solid fa-tags"></i><h3>توضیحات محصول</h3><p>توضیحات سئو شده و جذاب که فروش را افزایش می‌دهد.</p></div>
+      <div class="card"><i class="fa-solid fa-language"></i><h3>ترجمه انگلیسی↔فارسی</h3><p>ترجمه تخصصی و حرفه‌ای بین دو زبان.</p></div>
+      <div class="card"><i class="fa-solid fa-pen-nib"></i><h3>تولید محتوا</h3><p>مقالات، پست‌های وبلاگ و محتوای شبکه‌های اجتماعی.</p></div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>نمونه‌کار</h2>
+    <div class="portfolio">
+      <div class="card">
+        <img src="https://i.ytimg.com/vi/7NikhiU5r3E/maxresdefault.jpg" alt="پست فیلم کوتاه" />
+        <p>پست تبلیغاتی برای یک فیلم کوتاه</p>
+      </div>
+      <div class="card translation-split">
+        <img src="https://via.placeholder.com/300x200?text=متن+اصل" alt="متن اصلی" />
+        <img src="https://via.placeholder.com/300x200?text=متن+ترجمه+شده" alt="متن ترجمه شده" />
+        <p>نمونه ترجمه: قبل و بعد</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606326608693-5d7bfa2a0f88" alt="نوشتن توضیحات محصول" />
+        <p>توضیح محصول برای یک ساعت هوشمند</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1612831455542-1aa98e75f08b" alt="طراحی استوری سفر" />
+        <p>طراحی استوری اینستاگرام برای برند گردشگری</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <h2>تیم ما</h2>
+    <div class="team">
+      <div class="card"><h3>لیلا احمدی</h3><p>طراح ارشد – متخصص برندینگ در شبکه‌های اجتماعی</p></div>
+      <div class="card"><h3>علی رضایی</h3><p>متخصص محتوا و ترجمه – مسلط به انگلیسی و فارسی</p></div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>نظرات مشتریان</h2>
+    <div class="testimonials">
+      <div class="card"><p>“کار فوق‌العاده! نرخ تبدیل ما ۴۰٪ افزایش یافت.”</p><p>– سارا، مدیر فروشگاه آنلاین ⭐⭐⭐⭐⭐</p></div>
+      <div class="card"><p>“بسیار پاسخگو و خلاق.”</p><p>– جان، وبلاگ‌نویس ⭐⭐⭐⭐⭐</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>تماس با ما</h2>
+    <form>
+      <input type="text" placeholder="نام شما" required />
+      <input type="email" placeholder="ایمیل شما" required />
+      <textarea rows="5" placeholder="پیام شما"></textarea>
+      <button type="submit">ارسال</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 تیم فریلنسر فرامندی | GitHub: @faramandi
+  </footer>
+</body>
+</html>
