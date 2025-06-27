@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faramandi Team Freelancers | Creative Minds. Practical Results.</title>
     
+    <!-- SEO Meta Description and Keywords -->
+    <meta name="description" content="Faramandi Team Freelancers - ایده‌های خلاقانه و نتایج عملی. خدمات ما شامل طراحی گرافیک، تبدیل داده، نوشتن محتوا و ترجمه است.">
+    <meta name="keywords" content="فریلنسر، طراحی گرافیک، تبدیل داده، ترجمه، نوشتن محتوا، طراحی اینستاگرام">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Faramandi Team Freelancers">
+    <meta property="og:description" content="Creative Minds. Practical Results.">
+    <meta property="og:image" content="URL_to_image.jpg">
+    <meta property="og:url" content="https://www.yoursite.com">
+
     <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -269,6 +279,10 @@
         }
 
         /* Testimonials Section */
+        #testimonials {
+            background: var(--light-gray);
+        }
+
         .testimonials-container {
             display: flex;
             gap: 2rem;
@@ -292,7 +306,7 @@
         }
 
         .testimonial-card .quote::before {
-            content: '\f10d'; /* Font Awesome quote-left */
+            content: '\\f10d'; /* Font Awesome quote-left */
             font-family: 'Font Awesome 6 Free';
             font-weight: 900;
             position: absolute;
@@ -441,11 +455,11 @@
     <nav class="navbar">
         <a href="#home" class="logo">Faramandi Team</a>
         <ul class="nav-links">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#services" aria-label="Go to services section">Services</a></li>
+            <li><a href="#portfolio" aria-label="Go to portfolio section">Portfolio</a></li>
+            <li><a href="#about" aria-label="Go to about section">About</a></li>
+            <li><a href="#testimonials" aria-label="Go to testimonials section">Testimonials</a></li>
+            <li><a href="#contact" aria-label="Go to contact section">Contact</a></li>
         </ul>
     </nav>
 
@@ -491,7 +505,7 @@
                 </div>
             </div>
         </section>
-
+        
         <!-- Portfolio Section -->
         <section id="portfolio">
             <div class="container">
@@ -524,8 +538,8 @@
                 </div>
             </div>
         </section>
-        
-        <!-- About/Team Section -->
+
+        <!-- About Section -->
         <section id="about">
             <div class="container">
                 <h2>About Our Team</h2>
@@ -545,64 +559,63 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Testimonials Section -->
         <section id="testimonials">
             <div class="container">
                 <h2>What Our Clients Say</h2>
                 <div class="testimonials-container">
                     <div class="testimonial-card">
-                        <div class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <div class="quote">
+                            "The team delivered a top-notch design that truly captures our brand essence. We saw an increase in engagement on our social media platforms!"
                         </div>
-                        <p class="quote">Faramandi Team transformed our social media presence. Their designs are fresh, modern, and always on time. Highly recommended!</p>
-                        <p class="client">- Sarah L., Founder of "The Bloom Box"</p>
+                        <div class="client">- John Doe, Cafe Owner</div>
+                        <div class="stars">
+                            &#9733;&#9733;&#9733;&#9733;&#9733;
+                        </div>
                     </div>
                     <div class="testimonial-card">
-                        <div class="stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <div class="quote">
+                            "I am extremely satisfied with the translation services. The team understood our cultural nuances, making our message clear and relevant."
                         </div>
-                        <p class="quote">The data conversion task was handled with incredible speed and accuracy. They saved our team countless hours of manual work.</p>
-                        <p class="client">- Mark D., Operations at "Finance Solutions"</p>
+                        <div class="client">- Sarah Lee, E-commerce Manager</div>
+                        <div class="stars">
+                            &#9733;&#9733;&#9733;&#9733;&#9733;
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <!-- Contact Section -->
         <section id="contact">
             <div class="container">
-                <h2>Get In Touch</h2>
-                <form
-  action="https://formspree.io/f/xdkzyook"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+                <h2>Contact Us</h2>
+                <form class="contact-form" action="submit_form.php" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
         </section>
+
     </main>
 
-    <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="social-icons">
-                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p>&copy; 2024 Faramandi Team Freelancers. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
         </div>
+        <p>&copy; 2025 Faramandi Team Freelancers. All Rights Reserved.</p>
     </footer>
-    
+
 </body>
 </html>
